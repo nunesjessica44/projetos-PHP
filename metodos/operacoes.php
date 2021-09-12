@@ -2,7 +2,14 @@
    
     //peocedimento = sem return
     function somar($a, $b){
-        echo"soma = a: ". ($a+$b);
+        isset($a)? $a : "";
+        isset($b)? $b : "";
+
+        if($a=="" || $b==""){
+            echo"</br> Digite valores validos para realizar a soma!";
+        }else{
+            echo"</br> soma = a: ". ($a+$b);
+        }
     }
 
     //função = com return

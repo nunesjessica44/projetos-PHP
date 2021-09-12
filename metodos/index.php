@@ -16,7 +16,10 @@
         </form>
 
         <?php
-            somar($_POST['num1'], $_POST['num2']);
+            $a = isset($_POST['num1'])? $_POST['num1'] : "";
+            $b = isset($_POST['num2'])? $_POST['num2'] : "";
+
+            somar($a, $b); 
         ?>
 
 
